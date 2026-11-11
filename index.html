@@ -53,6 +53,8 @@
     }
     .sidebar .section { margin-bottom: 5.5mm; }
     .sidebar .section:last-child { margin-bottom: 0; }
+    .page-en .sidebar .section { margin-bottom: 4.2mm; }
+    .page-en .sidebar .section:last-child { margin-bottom: 0; }
     .sidebar .section-title {
       font-size: 0.74rem; font-weight: 700; color: #93c5fd;
       text-transform: uppercase; letter-spacing: 0.12em;
@@ -204,12 +206,13 @@
         <div class="tags">
           <span class="tag">AWS EC2</span><span class="tag">AWS S3</span>
           <span class="tag">AWS Lambda</span><span class="tag">AWS Bedrock</span>
+          <span class="tag">AWS Lightsail</span><span class="tag">Docker</span>
         </div>
       </div>
       <div class="skill-category">
         <div class="skill-label">Collaboration</div>
         <div class="tags">
-          <span class="tag">Git/GitHub</span><span class="tag">Notion</span><span class="tag">Figma</span>
+          <span class="tag">Git/GitHub</span><span class="tag">Notion</span><span class="tag">Figma</span><span class="tag">Slack</span>
         </div>
       </div>
       <div class="skill-category">
@@ -293,6 +296,21 @@
 
       <div class="proj-item">
         <div class="proj-header">
+          <span class="proj-name">DART-AI project</span>
+          <span class="proj-period">2026.07 ~ 운영 중</span>
+        </div>
+        <div class="proj-role">개인 프로젝트, BE / Infra · Python, Django, OpenAI API, Docker, AWS Lightsail, AWS S3</div>
+        <div class="proj-desc"><b>DART 전자공시 AI 요약 서비스</b> — 관심 기업을 선택하면 전자공시시스템(DART)에 올라오는 공시를 수집해 LLM으로 쉽고 빠르게 요약해 제공하는 서비스 (카카오 로그인, 실서비스 배포·운영 중)</div>
+        <ul class="proj-list">
+          <li>DART OpenAPI 수집 → 원문 조회 → LLM 요약 배치 파이프라인 설계 — 공시 노출 지연 24시간 → 21초로 단축</li>
+          <li>요청된 공시만 1회 요약·재사용하고 월 AI 예산 상한을 두어 LLM 비용 제어 (요약 1건당 약 $0.02)</li>
+          <li>Docker Compose + Caddy(HTTPS)로 AWS Lightsail에 배포, S3 일일 백업과 모니터링 대시보드·알림 구축</li>
+          <li>Claude Code 하네스(에이전트 5종·hooks) 기반 AI 네이티브 개발 — 테스트 638개 전체 PASS</li>
+        </ul>
+      </div>
+
+      <div class="proj-item">
+        <div class="proj-header">
           <span class="proj-name">Mefit</span>
           <span class="proj-period">2026.03 ~ 2026.05</span>
         </div>
@@ -347,32 +365,6 @@
           <li>AWS EC2 기반 서비스 배포 및 운영 환경 구축</li>
         </ul>
       </div>
-
-      <div class="proj-item">
-        <div class="proj-header">
-          <span class="proj-name">주류 애호가를 위한 큐레이션 서비스</span>
-          <span class="proj-period">2025.05</span>
-        </div>
-        <div class="proj-role">아이디어톤, 기획 / UX · Figma, Notion</div>
-        <div class="proj-desc"><b>술을 즐기는 사람들을 위한 맞춤형 추천 서비스 기획</b> — 사용자 취향을 조사하고 취향에 맞는 주류를 추천, 설명해주는 서비스(멋쟁이사자처럼 13기 아이디어톤 · 교내 1위, 학교 대표 선발)</div>
-        <ul class="proj-list">
-          <li>사용자 페르소나 정의 및 레퍼런스 리서치 주도</li>
-          <li>핵심 기능 설계 및 UI/UX 프로토타이핑 담당</li>
-        </ul>
-      </div>
-
-      <div class="proj-item">
-        <div class="proj-header">
-          <span class="proj-name">Pinterest 스타일 사진 공유 웹사이트</span>
-          <span class="proj-period">개인 프로젝트</span>
-        </div>
-        <div class="proj-role">개인 / Full-stack · Python, Django, HTML, CSS</div>
-        <div class="proj-desc">Pinterest에서 영감을 받은 사진 공유 웹 페이지로, Django 프레임워크와 HTML/CSS 학습을 위한 개인 프로젝트</div>
-        <ul class="proj-list">
-          <li>Django 기반 사진 업로드 및 공유 기능 구현</li>
-          <li>HTML/CSS를 활용한 그리드 레이아웃 UI 구성</li>
-        </ul>
-      </div>
     </div>
   </div>
 </div>
@@ -408,12 +400,13 @@
         <div class="tags">
           <span class="tag">AWS EC2</span><span class="tag">AWS S3</span>
           <span class="tag">AWS Lambda</span><span class="tag">AWS Bedrock</span>
+          <span class="tag">AWS Lightsail</span><span class="tag">Docker</span>
         </div>
       </div>
       <div class="skill-category">
         <div class="skill-label">Collaboration</div>
         <div class="tags">
-          <span class="tag">Git/GitHub</span><span class="tag">Notion</span><span class="tag">Figma</span>
+          <span class="tag">Git/GitHub</span><span class="tag">Notion</span><span class="tag">Figma</span><span class="tag">Slack</span>
         </div>
       </div>
       <div class="skill-category">
@@ -466,10 +459,10 @@
       </div>
       <div class="activity-item">
         <div class="activity-name">AWS AI Agent with MCP Bootcamp</div>
-        <div class="activity-detail">AWS Korea · Selected by faculty recommendation · 2025.08</div>
+        <div class="activity-detail">AWS Korea · Faculty-nominated · 2025.08</div>
       </div>
       <div class="activity-item">
-        <div class="activity-name">Republic of Korea Auxiliary Police (Honorably Discharged)</div>
+        <div class="activity-name">ROK Auxiliary Police (Honorably Discharged)</div>
         <div class="activity-detail">Seoul Metropolitan Police Agency · 2018.12 ~ 2020.07</div>
       </div>
     </div>
@@ -494,6 +487,21 @@
 
     <div class="section">
       <div class="section-title">Projects</div>
+
+      <div class="proj-item">
+        <div class="proj-header">
+          <span class="proj-name">DART-AI project</span>
+          <span class="proj-period">2026.07 ~ Live</span>
+        </div>
+        <div class="proj-role">Personal Project, BE / Infra · Python, Django, OpenAI API, Docker, AWS Lightsail, AWS S3</div>
+        <div class="proj-desc"><b>AI summaries of corporate disclosures on DART</b> — Users pick companies to follow, and the service collects their filings from DART (Korea's electronic disclosure system) and summarizes them with an LLM (Kakao login, live in production)</div>
+        <ul class="proj-list">
+          <li>Designed a batch pipeline (DART OpenAPI → document fetch → LLM summary), cutting disclosure delay from 24 hours to 21 seconds</li>
+          <li>Controlled LLM cost by summarizing only requested filings once and enforcing a monthly AI budget (~$0.02 per summary)</li>
+          <li>Deployed on AWS Lightsail with Docker Compose + Caddy (HTTPS), with daily S3 backups and a monitoring dashboard with alerts</li>
+          <li>AI-native development with a Claude Code harness (5 agents, hooks) — all 638 tests passing</li>
+        </ul>
+      </div>
 
       <div class="proj-item">
         <div class="proj-header">
@@ -549,32 +557,6 @@
           <li>Built document analysis using an AI API, improving accuracy via prompt engineering</li>
           <li>Designed and developed Django-based backend APIs</li>
           <li>Deployed the service and set up the production environment on AWS EC2</li>
-        </ul>
-      </div>
-
-      <div class="proj-item">
-        <div class="proj-header">
-          <span class="proj-name">Liquor Curation Service</span>
-          <span class="proj-period">2025.05</span>
-        </div>
-        <div class="proj-role">Ideathon, Planning / UX · Figma, Notion</div>
-        <div class="proj-desc"><b>Personalized recommendation service for liquor enthusiasts</b> — Recommends drinks matched to each user's taste (LIKELION 13th Ideathon · 1st on campus)</div>
-        <ul class="proj-list">
-          <li>Led user persona definition and reference research</li>
-          <li>Designed core features and built UI/UX prototypes</li>
-        </ul>
-      </div>
-
-      <div class="proj-item">
-        <div class="proj-header">
-          <span class="proj-name">Pinterest-style Photo Sharing Website</span>
-          <span class="proj-period">Personal Project</span>
-        </div>
-        <div class="proj-role">Personal, Full-stack · Python, Django, HTML, CSS</div>
-        <div class="proj-desc">A Pinterest-inspired photo sharing site built to learn Django and HTML/CSS</div>
-        <ul class="proj-list">
-          <li>Implemented photo upload and sharing features with Django</li>
-          <li>Built a grid-layout UI with HTML/CSS</li>
         </ul>
       </div>
     </div>
